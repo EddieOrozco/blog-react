@@ -18,7 +18,7 @@ class BlogPosts extends Component {
         id: 2,
         entryTitle: 'Muffins are a great easy thing to bake, and tasty too',
         entryImg:
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTFf6OzPjLKk69W7dY9e7cx6GnTm9rJgtF6jXJn4FK_GGDVaOLn&usqp=CAU',
+          'https://wonkypie.com/wp-content/uploads/healthy_blueberry_muffin_recipe-480x270.jpg',
         name: 'Eddie',
         date: 'May 27, 2020',
         entryContent:
@@ -28,7 +28,7 @@ class BlogPosts extends Component {
         id: 3,
         entryTitle: 'Brownies are a great easy thing to bake, and tasty too',
         entryImg:
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTFf6OzPjLKk69W7dY9e7cx6GnTm9rJgtF6jXJn4FK_GGDVaOLn&usqp=CAU',
+          'https://www.mamaknowsglutenfree.com/wp-content/uploads/2018/06/gluten-free-brownies-rc1-480x270.jpg',
         name: 'Eddie',
         date: 'May 27, 2020',
         entryContent:
@@ -36,9 +36,9 @@ class BlogPosts extends Component {
       },
       {
         id: 4,
-        entryTitle: 'Danish are a great easy thing to bake, and tasty too',
+        entryTitle: 'Pie are a great easy thing to bake, and tasty too',
         entryImg:
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTFf6OzPjLKk69W7dY9e7cx6GnTm9rJgtF6jXJn4FK_GGDVaOLn&usqp=CAU',
+          'https://theloopywhisk.com/wp-content/uploads/2019/09/Pumpkin-Pie_730px-featured-480x270.jpg',
         name: 'Eddie',
         date: 'May 27, 2020',
         entryContent:
@@ -55,14 +55,14 @@ class BlogPosts extends Component {
             <div className='col-lg-8 entries'>
               <div className='row'>
                 {posts.map((post) => (
-                  <div className='col-md-6 d-flex align-items-stretch'>
-                    <BlogPost
-                      entryTitle={post.entryTitle}
-                      name={post.name}
-                      date={post.date}
-                      entryContent={post.entryContent}
-                    />
-                  </div>
+                  <BlogPost
+                    key={post.id}
+                    entryTitle={post.entryTitle}
+                    entryImg={post.entryImg}
+                    name={post.name}
+                    date={post.date}
+                    entryContent={post.entryContent}
+                  />
                 ))}
               </div>
 
