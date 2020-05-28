@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import BlogPost from './BlogPost';
+import PostAll from './PostAll';
 
-class BlogPosts extends Component {
+class PostsAllMap extends Component {
   state = {
     posts: [
       {
@@ -55,7 +55,7 @@ class BlogPosts extends Component {
             <div className='col-lg-8 entries'>
               <div className='row'>
                 {posts.map((post) => (
-                  <BlogPost
+                  <PostAll
                     key={post.id}
                     entryTitle={post.entryTitle}
                     entryImg={post.entryImg}
@@ -77,4 +77,4 @@ class BlogPosts extends Component {
   }
 }
 
-export default BlogPosts;
+export default PostsAllMap;

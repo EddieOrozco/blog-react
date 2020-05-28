@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class BlogPost extends Component {
+class PostAll extends Component {
   render() {
     const { entryTitle, name, date, entryContent, entryImg } = this.props;
     return (
@@ -51,4 +51,4 @@ class BlogPost extends Component {
   }
 }
 
-export default BlogPost;
+export default PostAll;
