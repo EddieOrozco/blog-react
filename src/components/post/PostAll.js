@@ -39,7 +39,7 @@ class PostAll extends Component {
           </div>
           {/* Content Dynamic */}
           <div className='entry-content'>
-            <p>{entryContent}</p>
+            {/* <p>{entryContent}</p> */}
             {/* BTN Component */}
             <div className='read-more'>
               <a href='blog-single.html'>Read More</a>
